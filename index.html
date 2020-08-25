@@ -7,16 +7,21 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/introLoader.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
   </head>
   <body>
+  
+        <div id="particles-js"></div>
 
+    <div id="demo"></div>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,8 +68,26 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint quis molestiae dolorem labore totam deleniti minima quisquam.</p>
               <a href="#" class="btn btn-dark">BUY NOW</a>
             </div>
+            <div class="col-xl-6"   data-aos="zoom-in">
+              <img src="images/banner-products/product-1.png" class="img-fluid Macbook">
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+    <div class="carousel-item">
+
+        <div class="container">
+          <div class="row align-items-center">
             <div class="col-xl-6">
-              <img src="images/banner-products/product-1.png" class="img-fluid">
+              <h1>Macbook Pro</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint quis molestiae dolorem labore totam deleniti minima quisquam.</p>
+              <a href="#" class="btn btn-dark">BUY NOW</a>
+            </div>
+            <div class="col-xl-6"  data-aos="zoom-in">
+              <img src="images/banner-products/slider-1.png" class="img-fluid Macbook">
             </div>
           </div>
         </div>
@@ -80,25 +103,8 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint quis molestiae dolorem labore totam deleniti minima quisquam.</p>
               <a href="#" class="btn btn-dark">BUY NOW</a>
             </div>
-            <div class="col-xl-6">
-              <img src="images/banner-products/slider-1.png" class="img-fluid">
-            </div>
-          </div>
-        </div>
-    </div>
-
-
-    <div class="carousel-item">
-
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xl-6">
-              <h1>Macbook Pro</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint quis molestiae dolorem labore totam deleniti minima quisquam.</p>
-              <a href="#" class="btn btn-dark">BUY NOW</a>
-            </div>
-            <div class="col-xl-6">
-              <img src="images/banner-products/slider-3.png" class="img-fluid">
+            <div class="col-xl-6"   data-aos="zoom-in">
+              <img src="images/banner-products/slider-3.png" class="img-fluid Macbook">
             </div>
           </div>
         </div>
@@ -110,7 +116,8 @@
 </div>
 
 
-<section class="featured-product">
+<section class="featured-product" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
   <div class="container">
     <div class="row">
       <div class="col-xl-12">
@@ -166,7 +173,7 @@
         </ul>
       </div>
 
-      <div class="col-xl-4">
+      <div class="col-xl-4"  data-aos="zoom-in">
         <div class="product">
           <a href="#"><img src="images/laptop/product-1.png" class="img-fluid" alt="phone-1"></a>
           <a href="#"><h1>Asus ZenBook 14 UX433</h1></a>
@@ -176,7 +183,7 @@
         </div>
       </div>
 
-      <div class="col-xl-4">
+      <div class="col-xl-4"  data-aos="zoom-in">
         <div class="product">
           <a href="#"><img src="images/laptop/product-2.png" class="img-fluid" alt="phone-1"></a>
           <a href="#"><h1>Asus ZenBook Pro Duo</h1></a>
@@ -186,7 +193,7 @@
         </div>
       </div>
 
-      <div class="col-xl-4">
+      <div class="col-xl-4"  data-aos="zoom-in">
         <div class="product">
           <a href="#"><img src="images/laptop/product-3.png" class="img-fluid" alt="phone-1"></a>
           <a href="#"><h1>HP Elite Dragonfly</h1></a>
@@ -214,24 +221,24 @@
         <div class="row  align-items-center">
           <div class="col-xl-6">
             <a href="#">
-              <img src="images/categories/bag.png" alt="bag" class="img-fluid">
+              <img src="images/categories/bag.png" alt="bag" class="img-fluid bag">
               <h3>Bag</h3>
             </a>
           </div>
           <div class="col-xl-6">
             
             <a href="#">
-              <img src="images/categories/perfume.png" alt="perfume" class="img-fluid">
+              <img src="images/categories/perfume.png" alt="perfume" class="img-fluid perfume">
               <h3>Perfume</h3>
             </a>
             <a href="#">
-              <img src="images/categories/shoe.png" alt="shoe" class="img-fluid">
+              <img src="images/categories/shoe.png" alt="shoe" class="img-fluid shoe">
               <h3>Shoe</h3>
             </a>
           </div>
         </div>
       </div>
-      <div class="col-xl-6">
+      <div class="col-xl-6"  data-aos="zoom-in">
         <img src="images/categories/pale-order.png" alt="pale-order" class="img-fluid">
       </div>
 
@@ -241,8 +248,25 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/jquery.introLoader.min.js"></script>
+    <script src="js/spin.min.jsspin.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script><script src="js/script.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="js/jquery-parallax.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
